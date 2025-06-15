@@ -10,7 +10,13 @@ const schema = z.object({
   title: z.string().min(1, "Title is required"),
   content: z.string().min(1, "Content is required"),
   author: z.string().min(1, "Author is required"),
-  image: z.string().url("Image must be a valid URL").optional(),
+  image: z
+    .string()
+    .transform((val) => (val.trim() === "" ? undefined : val))
+    .optional()
+    .refine((val) => !val || /^https?:\/\/.+\..+/.test(val), {
+      message: "Image must be a valid URL",
+    }),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -29,6 +35,7 @@ export default function CreatePostPage() {
   const onSubmit = (data: FormData) => {
     const newPost: Post = {
       ...data,
+      image: data.image || "https://dummyjson.com/image/200x100",
       date: new Date().toISOString().split("T")[0],
       slug: data.title.toLowerCase().replace(/ /g, "-"),
     };
@@ -88,7 +95,7 @@ export default function CreatePostPage() {
         <div className="text-center">
           <button
             type="submit"
-            className="bg-indigo-600 text-white px-6 py-2 rounded shadow hover:bg-indigo-700"
+            className="bg-indigo-600 cursor-pointer text-white px-6 py-2 rounded shadow hover:bg-indigo-700"
           >
             ✅ Submit Post
           </button>

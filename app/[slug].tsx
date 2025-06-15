@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Layout from "./layout";
-import { Post } from "./post";
 import postsData from "./posts.json";
+import { Post } from "./types/post";
 
 export default function PostDetail() {
   const router = useRouter();

@@ -1,4 +1,4 @@
-import { Post } from "./post";
+import { Post } from "./types/post";
 
 export const getPosts = (): Post[] => {
   if (typeof window === "undefined") return [];

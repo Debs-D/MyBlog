@@ -1,0 +1,34 @@
+[
+  {
+    "title": "First Blog Post",
+    "content": "This is the full content of the first blog post. We dive into what makes a great frontend developer. From learning React and mastering state management to understanding UI/UX principles and performance optimizations, this post is a must-read for beginners and experienced developers alike.",
+    "author": "Odekunle Ayishat",
+    "date": "2025-06-14",
+    "slug": "first-blog-post",
+    "image": "https://www.shoutmeloud.com/wp-content/uploads/2020/12/Your-First-Blog-Post.jpg"
+  },
+  {
+    "title": "How to Stay Productive as a Developer",
+    "content": "In this post, we explore productivity hacks for developers. Learn how to avoid burnout, manage time effectively, block distractions, and build a daily routine that helps you stay focused and ship faster without compromising on quality.",
+    "author": "Odekunle Ayishat",
+    "date": "2025-06-14",
+    "slug": "stay-productive",
+    "image": "https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/10260238/cover_image/retina_1708x683/02-Developer%20Hiring%20and%20Skills%20%281%29-17ad0cc6d97bc316c1c37d495059d41d.png"
+  },
+  {
+    "title": "Why Design Matters in Frontend",
+    "content": "Let’s break down the key principles of good frontend design. From layout and responsiveness to accessibility and visual consistency, discover how solid design enhances usability and overall user satisfaction in web applications.",
+    "author": "Odekunle Ayishat",
+    "date": "2025-06-13",
+    "slug": "frontend-design",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxypFFiRN7I51No6TnwWiy_K1RXp6O3h-_Dw&s"
+  },
+  {
+    "title": "A Beginner's Guide to TypeScript",
+    "content": "TypeScript makes JavaScript development more robust. This post covers the fundamentals: static typing, interfaces, type inference, and how to set up a Next.js project with TypeScript for cleaner and safer code.",
+    "author": "Odekunle Ayishat",
+    "date": "2025-06-12",
+    "slug": "typescript-guide",
+    "image": "https://www.mytaskpanel.com/wp-content/uploads/2024/01/03-blog.webp"
+  }
+]

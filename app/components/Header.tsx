@@ -46,7 +46,7 @@ export default function Header() {
 
           <button
             onClick={toggleDarkMode}
-            className="text-sm px-3 py-1.5 border border-white/50 text-white rounded hover:bg-white/10 transition"
+            className="text-sm px-3 py-1.5 border cursor-pointer border-white/50 text-white rounded hover:bg-white/10 transition"
           >
             {isDarkMode ? "☀ Light" : "🌙 Dark"}
           </button>
